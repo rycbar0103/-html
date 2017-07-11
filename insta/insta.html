@@ -12,19 +12,36 @@
 
     
 	<style type="text/css">
+	html, body{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	
 	.hold{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		margin-top: 3%;
+		padding-bottom:1%;
+		display: flex;
+ 		align-items: center;
+  		justify-content: center;
+	}
+	
+	.center{
 		width:1024px;
 		height: 700px;
 		margin: 0 auto;
-		margin-top: 3%;
-
 		padding-bottom:1%;
 	}
 	
 	.bottom {
-		width:1074px;
+		width: 100%;
 		height: 50px;
-		margin: 0 auto;
+		position: fixed;
+   		bottom: 0;
+
 	}
 	
 	.row{
@@ -76,7 +93,6 @@
 		margin-top:8%;
 		color:black;
 		font-size: 14px;
-		
 	}
 	
 	.inputbox{
@@ -127,7 +143,7 @@
 	}
 	
 	a{
-		text-decoration:none; 
+	text-decoration:none; 
 	}
 	
 	a:active {
@@ -140,7 +156,11 @@
 	color: black;
 	}
 
-
+	.list{
+		width: 1074px;
+		margin: 0 auto;
+	
+	}
 
 	
 	
@@ -150,12 +170,7 @@
 	}:-moz-placeholder {
 	  font-size: 13px;
   	  color:#999999;
-	}
-	::-moz-placeholder {
-	  font-size: 13px;
-  	  color:#999999;
-	}
-	:-ms-input-placeholder {
+	}:-ms-input-placeholder {
 	  font-size: 13px;
   	  color:#999999;
 	}
@@ -167,6 +182,7 @@
   <body style="background-color: #FAFAFA">
   
   <div class="hold">
+    <div class="center">
 	  <div class="row" id="rowlevel1">
 	  	<img src="insta1.png"/>
 	  </div>
@@ -211,7 +227,6 @@
 	  			
 	  	</div>
 	  	
-	  	
 	  	<p style="font-size: 14px; margin-top: 8%;">앱을 다운로드하세요.</p>
 	  	
 	  	
@@ -220,15 +235,14 @@
 	  		<a href=""><img src="google.png" style="margin-bottom: 0%; margin-left: 1%;"/></a>
 	  	</div>
 	  	
-	  	
-	  
 	  </div>
+	  
+	</div>
 	  
   </div>
   
   <div class="bottom" style="margin-top: 3%; ">
-  
- 	<ul>
+ 	<ul class="list">
   		<li><a href="">INSTAGRAM 정보</a></li>
   		<li><a href="">지원</a></li>
   		<li><a href="">블로그</a></li>
@@ -241,10 +255,6 @@
   		<li><a href="">언어</a></li>
   		<li style="margin-left:20%; color: #999999;">© 2017 INSTAGRAM</li>
 	</ul>
-
-
-
-	  
   </div>
   
   
