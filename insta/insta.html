@@ -26,13 +26,16 @@
 	
 	.hold{
 		width: 100%;
-		height: 700px;
-		margin: auto;
-		margin-top: 2%;
-		padding-bottom:3%;
-		display: flex;
- 		align-items: center;
-  		justify-content: center;
+		height: 100%;
+		margin-bottom: 5%;
+  		position:absolute;
+ 		top:0;
+ 		right:0;
+ 		bottom:0;
+ 		left:0;
+ 		display:flex;
+ 		align-items:center;
+  		justify-content:center;
 	}
 	
 	.center{
@@ -45,7 +48,8 @@
 	.bottom {
 		width: 100%;
 		height: 50px;
-		position: fixed;
+		display: flex;
+		position: absolute;
    		bottom: 0px;
 	}
 	
@@ -163,6 +167,7 @@
 
 	.list{
 		width: 940px;
+		
 		margin: 0 auto;
 	}
 
@@ -179,7 +184,17 @@
   	  color:#999999;
 	}
 	
-	@media ( max-width: 1023px ){
+	@media screen and ( max-height: 870px ){
+	
+		.bottom {
+			width: 100%;
+			height: 50px;
+   			display:none;
+		}
+		
+	}
+	
+	@media screen and ( max-width: 1023px ){
 	
 		#rowlevel1{
 			display:none;
@@ -214,10 +229,9 @@
 		
 		.hold{
 			width: 100%;
-			height: 700px;
-			margin: auto;
-			margin-top: 4%;
-			padding-bottom:3%;
+			height: 100%;
+			margin-top: -5%;
+			margin-bottom: 5%;
 			display: flex;
  			align-items: center;
   			justify-content: center;
@@ -225,12 +239,15 @@
 		
 		.list{
 			width: 70%;
+			display: table-cell;
+ 			vertical-align: middle;
+ 			text-align: center;
 			margin: 0 auto;
 		}
 		
 	}
 	
-	@media ( max-width: 401px ){
+	@media screen and ( max-width: 401px ){
 	
 		#rowlevel1{
 			display:none;
@@ -283,7 +300,132 @@
 			width: 90%;
 			margin: 0 auto;
 		}
+		
 	}
+	
+	@media screen and ( max-width: 1023px ) and ( max-height: 870px ){
+	
+		#rowlevel1{
+			display:none;
+		}
+		
+		.center{
+		width:100%;
+		height: 740px;
+		margin: 0 auto;
+		padding-bottom:1%;
+		display: table-cell;
+ 		vertical-align: middle;
+ 		text-align: center;
+ 		width: 337.92px;
+		
+		}
+		
+		.row{
+			
+		}
+		
+		#rowlevel2{
+			background-color: #FAFAFA;
+			height: 101.2%;
+			margin: 0 auto;
+			display: table-cell;
+ 			vertical-align: middle;
+ 			text-align: center;
+ 			width: 337.92px;
+	
+		}
+		
+		.hold{
+			width: 100%;
+			height: 100%;
+			margin-top: -5%;
+			margin-bottom: 5%;
+			display: flex;
+ 			align-items: center;
+  			justify-content: center;
+		}
+		
+		.list{
+			width: 70%;
+			margin: 0 auto;
+		}
+		
+		.bottom {
+			width: 100%;
+			height: 50px;
+
+		}
+		
+	}
+	
+	@media screen and ( max-width: 401px ) and ( max-height: 870px ){
+	
+		#rowlevel1{
+			display:none;
+		}
+		
+		.center{
+		width:100%;
+		height: 740px;
+		margin: 0 auto;
+		padding-bottom:1%;
+		display: table-cell;
+ 		vertical-align: middle;
+ 		text-align: center;
+ 		width: 337.92px;
+		
+		}
+		
+		.row{
+			
+		}
+		
+		#rowlevel2{
+			background-color: #FAFAFA;
+			height: 101.2%;
+			margin: 0 auto;
+			display: table-cell;
+ 			vertical-align: middle;
+ 			text-align: center;
+ 			width: 337.92px;
+	
+		}
+		
+		#box1{
+			height: 74%;
+			margin: 0 auto;
+			margin-top:2%;
+			background-color: #FAFAFA;
+			border: none;
+		}
+	
+		#box2{
+			height: 10%;
+			margin: 0 auto;
+			margin-top:4%;
+			background-color: #FAFAFA;
+			border: none;
+		}
+		
+		.list{
+			width: 90%;
+			margin: 0 auto;
+		}
+		
+		.bottom {
+			width: 100%;
+			height: 50px;
+   			display:none;
+		}
+		
+	}
+	
+	
+	
+			
+	
+	
 
 	</style>
     
@@ -358,7 +500,7 @@
   
   <footer>
   
-  	<div class="bottom" style="margin-top: 2%; ">
+  	<div class="bottom" style="margin-top: 4%; ">
  		<ul class="list">
   			<li><a href="">INSTAGRAM 정보</a></li>
   			<li><a href="">지원</a></li>
