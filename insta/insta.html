@@ -20,12 +20,16 @@
 		overflow-x: hidden;
 	}
 	
+	footer {
+		width:1074px;
+	}
+	
 	.hold{
 		width: 100%;
 		height: 700px;
 		margin: auto;
-		margin-top: 3%;
-		padding-bottom:1%;
+		margin-top: 2%;
+		padding-bottom:3%;
 		display: flex;
  		align-items: center;
   		justify-content: center;
@@ -53,7 +57,7 @@
 	#rowlevel1{
 		margin-left: 13.5%;
 		margin-top: 6%;
-		width: 33%;
+		width: 337.92px;
 	
 	}
 	
@@ -61,11 +65,11 @@
 		background-color: #FAFAFA;
 		height: 101.2%;
 		margin: 0 auto;
-		margin-left: 6%;
+		margin-left: 61.44px;
 		display: table-cell;
  		vertical-align: middle;
  		text-align: center;
- 		width: 33%;
+ 		width: 337.92px;
 	
 	}
 	
@@ -128,7 +132,7 @@
 	}
 	
 	input:focus {
- 		outline: none !important;
+ 		outline: none;
    		border-color: #B2B2B2;
 	}
 	
@@ -158,7 +162,7 @@
 	}
 
 	.list{
-		width: 1074px;
+		width: 940px;
 		margin: 0 auto;
 	}
 
@@ -173,6 +177,112 @@
 	}:-ms-input-placeholder {
 	  font-size: 13px;
   	  color:#999999;
+	}
+	
+	@media ( max-width: 1023px ){
+	
+		#rowlevel1{
+			display:none;
+		}
+		
+		.center{
+		width:100%;
+		height: 740px;
+		margin: 0 auto;
+		padding-bottom:1%;
+		display: table-cell;
+ 		vertical-align: middle;
+ 		text-align: center;
+ 		width: 337.92px;
+		
+		}
+		
+		.row{
+			
+		}
+		
+		#rowlevel2{
+			background-color: #FAFAFA;
+			height: 101.2%;
+			margin: 0 auto;
+			display: table-cell;
+ 			vertical-align: middle;
+ 			text-align: center;
+ 			width: 337.92px;
+	
+		}
+		
+		.hold{
+			width: 100%;
+			height: 700px;
+			margin: auto;
+			margin-top: 4%;
+			padding-bottom:3%;
+			display: flex;
+ 			align-items: center;
+  			justify-content: center;
+		}
+		
+		.list{
+			width: 70%;
+			margin: 0 auto;
+		}
+		
+	}
+	
+	@media ( max-width: 401px ){
+	
+		#rowlevel1{
+			display:none;
+		}
+		
+		.center{
+		width:100%;
+		height: 740px;
+		margin: 0 auto;
+		padding-bottom:1%;
+		display: table-cell;
+ 		vertical-align: middle;
+ 		text-align: center;
+ 		width: 337.92px;
+		
+		}
+		
+		.row{
+			
+		}
+		
+		#rowlevel2{
+			background-color: #FAFAFA;
+			height: 101.2%;
+			margin: 0 auto;
+			display: table-cell;
+ 			vertical-align: middle;
+ 			text-align: center;
+ 			width: 337.92px;
+	
+		}
+		
+		#box1{
+			height: 74%;
+			margin: 0 auto;
+			margin-top:2%;
+			background-color: #FAFAFA;
+			border: none;
+		}
+	
+		#box2{
+			height: 10%;
+			margin: 0 auto;
+			margin-top:4%;
+			background-color: #FAFAFA;
+			border: none;
+		}
+		
+		.list{
+			width: 90%;
+			margin: 0 auto;
+		}
 	}
 
 	</style>
@@ -189,13 +299,13 @@
 	  
 	  <div class="row" id="rowlevel2" >
 	  	<div id="box1">
-	  		<a href=""> <img src="instabiglogo.png" class="boxmarg" style="margin-top:6%" /> </a>
+	  		<img src="instabiglogo.png" class="boxmarg" style="margin-top:6%" />
 	  		
 	  		<p class="boxmarg" id="joint">친구들의 사진과 동영상을 보려면 가입하세요.</p>
 	  		
 	  		<a href=""> <img src="facebooklogin.png" style="margin-top: 3.8%;"  class="boxmarg" /> </a>
 	  		
-	  		<img src="else.png" style="margin-top: 3.5%; margin-bottom: 0%;"  class="boxmarg"/>
+	  		<a href=""> <img src="else.png" style="margin-top: 3.5%; margin-bottom: 0%;"  class="boxmarg"/> </a>
 	  		
 	  		<input class="inputbox" type='text' placeholder="휴대폰 번호 또는 이메일 주소" 
 	  		 
@@ -241,24 +351,30 @@
 	  
   </div>
   
-  <div class="bottom" style="margin-top: 3%; ">
- 	<ul class="list">
-  		<li><a href="">INSTAGRAM 정보</a></li>
-  		<li><a href="">지원</a></li>
-  		<li><a href="">블로그</a></li>
-  		<li><a href="">홍보 센터</a></li>
-  		<li><a href="">API</a></li>
-  		<li><a href="">채용 정보</a></li>
-  		<li><a href="">개인정보처리방침</a></li>
-  		<li><a href="">약관</a></li>
-  		<li><a href="">디렉터리</a></li>
-  		<li><a href="">언어</a></li>
-  		<li style="margin-left:20%; color: #999999;">© 2017 INSTAGRAM</li>
-	</ul>
-  </div>
+  
   
   
   </body>
+  
+  <footer>
+  
+  	<div class="bottom" style="margin-top: 2%; ">
+ 		<ul class="list">
+  			<li><a href="">INSTAGRAM 정보</a></li>
+  			<li><a href="">지원</a></li>
+  			<li><a href="">블로그</a></li>
+  			<li><a href="">홍보 센터</a></li>
+  			<li><a href="">API</a></li>
+  			<li><a href="">채용 정보</a></li>
+  			<li><a href="">개인정보처리방침</a></li>
+  			<li><a href="">약관</a></li>
+  			<li><a href="">디렉터리</a></li>
+  			<li><a href="">언어</a></li>
+  			<li style="margin-left:20%; color: #999999;">© 2017 INSTAGRAM</li>
+		</ul>
+ 	</div>
+  
+  </footer>
   
   
 </html>
